@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def create
+    binding.debugger
     product = Product.create!(product_params)
 
     redirect_to product
